@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BRUTAL.TICKER</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      /* Brutalist resets and base styles */
+      body {
+        background-color: #ffffff;
+        color: #000000;
+        font-family: 'Courier New', Courier, monospace; /* Fallback to mono for raw feel if sans fails */
+        -webkit-font-smoothing: none; /* Crisper edges */
+      }
+      /* Custom utility for the brutal hard shadow */
+      .brutal-shadow {
+        box-shadow: 4px 4px 0px 0px #000000;
+      }
+      .brutal-shadow-sm {
+        box-shadow: 2px 2px 0px 0px #000000;
+      }
+      .brutal-border {
+        border: 2px solid #000000;
+      }
+      .scrollbar-hide::-webkit-scrollbar {
+          display: none;
+      }
+      .scrollbar-hide {
+          -ms-overflow-style: none;
+          scrollbar-width: none;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0",
+    "recharts": "https://aistudiocdn.com/recharts@^3.5.0"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
